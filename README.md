@@ -196,7 +196,21 @@ They do not predict future stock performance.
 3. Run the notebook cells in order.
 4. Review the calculated features and clustering results.
 
-The raw data file is included as a historical snapshot.
+The notebook downloads historical stock data from Yahoo Finance
+using yfinance. A new download may return different results
+or unavailable symbols.
+
+The file sp500_raw_data.pkl contains the original downloaded
+data used for this analysis. It is included as a historical
+snapshot to support reproducibility.
+
+The original S&P 500 company list was collected from Wikipedia
+on 12 November 2026.
+
+A fresh-run test was completed on 22 November 2026 using
+a separate Google Colab environment. The test successfully
+executed the analysis and reproduced the main clustering results.
+
 Only load pickle files from trusted sources.
 
 ## Software Used
